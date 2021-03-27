@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html>
+<body onload="setTimeout('myFunction()', 3000)">
+
+<script>
+function myFunction() {
+    var random = Math.random().toString(36).substr(2, 36);
+    var time = new Date().getTime();
+    var url = window.location.href;
+    window.location = url + random + time
+}
+</script>
+
+</body>
+</html>
